@@ -5,6 +5,12 @@ class Cli < Formula
   sha256 "2b682073201d2eb0a5f54b8f9830cab0649d82ec3e75242f5da06b9ce2759922"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/mhanberg/homebrew-tap/releases/download/cli-0.1.0-alpha.3"
+    sha256 cellar: :any_skip_relocation, big_sur:      "48eb68d074e672638e969dc259b6172271e35ac9eef65c58b173573f64c158c5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a132f731da6d082071c03eaf82ab8373c243f01499ae302558f6f4879993f367"
+  end
+
   depends_on "ruby" => :build
   depends_on "bash"
 
