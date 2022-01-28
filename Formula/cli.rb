@@ -1,8 +1,8 @@
 class Cli < Formula
   desc "Motch CLI"
   homepage "https://github.com/mhanberg/cli"
-  url "https://github.com/mhanberg/cli/archive/refs/tags/v0.1.0-alpha.2.tar.gz"
-  sha256 "8665964991c400a69499737205ad9c19801d0b6b96f5ab976b22222a2ee4309a"
+  url "https://github.com/mhanberg/cli/archive/refs/tags/v0.1.0-alpha.3.tar.gz"
+  sha256 "2b682073201d2eb0a5f54b8f9830cab0649d82ec3e75242f5da06b9ce2759922"
   license "MIT"
 
   depends_on "ruby" => :build
@@ -27,7 +27,7 @@ class Cli < Formula
 
     system gem_install_dir/"bin/bashly", "generate"
 
-    bin.install "motch"
+    bin.install "mctl"
     bin.install Dir["external-scripts/*"]
   end
 
