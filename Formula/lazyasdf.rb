@@ -5,6 +5,11 @@ class Lazyasdf < Formula
   sha256 "07d4c48333c24916b8255f02ac65b48fa5a9831ce5b1eef1d8d94747eaba04cc"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/mhanberg/homebrew-tap/releases/download/lazyasdf-0.1.0"
+    sha256 cellar: :any_skip_relocation, monterey: "65257bc76dca68824cce181c60208404b34fb681f6d999ef3cbefaf66f0dae95"
+  end
+
   depends_on "elixir" => :build
   depends_on "erlang" => :build
   depends_on "gcc" => :build
