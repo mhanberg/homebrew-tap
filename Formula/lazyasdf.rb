@@ -6,8 +6,8 @@ class Lazyasdf < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/mhanberg/homebrew-tap/releases/download/lazyasdf-0.1.0"
-    sha256 cellar: :any_skip_relocation, monterey: "65257bc76dca68824cce181c60208404b34fb681f6d999ef3cbefaf66f0dae95"
+    root_url "https://github.com/mhanberg/homebrew-tap/releases/download/lazyasdf-0.1.1"
+    sha256 cellar: :any_skip_relocation, monterey: "f489e328c19954d62284a7154fbc8da4e7a1df61dc963930d291361a7b2ca751"
   end
 
   depends_on "elixir" => :build
