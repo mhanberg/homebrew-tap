@@ -1,8 +1,8 @@
 class Lazyasdf < Formula
   desc "TUI for the asdf version manager"
   homepage "https://github.com/mhanberg/lazyasdf"
-  url "https://github.com/mhanberg/lazyasdf/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "07d4c48333c24916b8255f02ac65b48fa5a9831ce5b1eef1d8d94747eaba04cc"
+  url "https://github.com/mhanberg/lazyasdf/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "787da19809ed714c569c8bd7df58d55d7389b69efdf1859e57f713d18e3d2d05"
   license "MIT"
 
   bottle do
@@ -56,6 +56,12 @@ class Lazyasdf < Formula
 
     system "mix", "local.hex", "--force"
     system "mix", "local.rebar", "--force"
+
+    ENV["BURRITO_TARGET"] = if Hardware::CPU.arm?
+      "macos_m1"
+    else
+      "macos"
+    end
 
     ENV["MIX_ENV"] = "prod"
     system "mix", "deps.get"
