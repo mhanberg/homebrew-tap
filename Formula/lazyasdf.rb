@@ -1,8 +1,8 @@
 class Lazyasdf < Formula
   desc "TUI for the asdf version manager"
   homepage "https://github.com/mhanberg/lazyasdf"
-  url "https://github.com/mhanberg/lazyasdf/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "0d94926354a1c42dc50f4db98cdb80d62f63d9e25731b2afd4cff05479965dfd"
+  url "https://github.com/mhanberg/lazyasdf/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "1c427fb3339a6646d60fc0ac4fba7a351721d92a6add91ee1e0ed26a7b4cb849"
   license "MIT"
 
   bottle do
